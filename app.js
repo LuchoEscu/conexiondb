@@ -25,9 +25,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-// pool.query('select * from empleados where edad = 26').then( (res) => {
-//   console.log(res);
-// });
+ pool.query('select * from empleados where edad = 26').then( (res) => {
+   console.log(res);
+ });
 
 // var obj = {
 //   nombre:   'Luciano',
